@@ -34,4 +34,13 @@ If we had a non-deterministic computer, we could solve TSP quickly. However, we 
 There is hope that quantum computing will give us the non-deterministic computer because it can examine all computers at once. 
 
 ### The Class of Problems
+We think of problems as belonging to a class. 
+* **Class P**: A solution may be found in polynomial time (easy)
+* **Class NP**: A solution may be verified in polynomial time
+* **NP Hard**: We are yet to find a polynomial-time solution
+* **NP Complete**: Both in NP and at least as hard as NP Hard problems
+
+A problem is either **known** or **yet to be known** to be in P or NP.
+
+
 
