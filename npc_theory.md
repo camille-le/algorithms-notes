@@ -54,7 +54,9 @@ The P vs. NP question - does P equal NP or not - this gives us two realities:
 2. There are roughly 11% of people that think on the right chart (citation needed). They think it's possible that P == NP and that it's all NP complete and the complexity classes will collapse on themselves, that factoring becomes easy. 
 Nobody has been able to definitively prove one side or the other. 
 
-
-
-
+### NP Complete Proofs
+We're proving that some unknown Problem B is NP Complete:
+![npc.png](imgs/npc.png)
+1. Prove that the **unknown** Problem B is NP Complete by showing that it could be used to solve an instance _I_ of _A_, a known NP Complete problem.
+2. You define _f_ and _h_ in your proof. These are the input and output transformations.
 
