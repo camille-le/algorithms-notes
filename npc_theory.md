@@ -43,7 +43,18 @@ We think of problems as belonging to a class.
 * **NP Hard**: We are yet to find a polynomial-time solution
 * **NP Complete**: Both in NP and at least as hard as NP Hard problems
 
+There is a huge outstanding theoretical computing -- the P vs NP debate. Does P equal NP or not? Why is this an open question? 
+
 A problem is either **known** or **yet to be known** to be in P or NP.
+
+We cannot prove the absence of a polynomial time algorithm today. We can only say we are yet to find one. We cannot prove the absence of polynomial time verification. We can only say that we are yet to find one. We cannot discount that some clever person is going to figure it out. 
+
+The P vs. NP question - does P equal NP or not - this gives us two realities:
+1. The first is the intersection in the chart on the left. Roughly 83% of computer scientists think that is reality, that P does not equal NP. 
+2. There are roughly 11% of people that think on the right chart (citation needed). They think it's possible that P == NP and that it's all NP complete and the complexity classes will collapse on themselves, that factoring becomes easy. 
+Nobody has been able to definitively prove one side or the other. 
+
+
 
 
 
