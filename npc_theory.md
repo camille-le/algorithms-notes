@@ -60,3 +60,9 @@ We're proving that some unknown Problem B is NP Complete:
 1. Prove that the **unknown** Problem B is NP Complete by showing that it could be used to solve an instance _I_ of _A_, a known NP Complete problem.
 2. You define _f_ and _h_ in your proof. These are the input and output transformations.
 
+In this case, we're using a reduction to prove the _hardness_ of a problem. We reduce A to B to show that B is at least as hard as A: `A -> B`
+
+#### Why does this work? 
+We have some known problem `A`. We're taking problems that we assume are hard, such as SAT, Vertex Cover, Independent Set, and the like, and we reduce it to some unknown problem `B`. 
+
+The argument is that if `A` is known to be hard, it does not have a polynomial time solution, then solving B can be used to solve `A`. 
