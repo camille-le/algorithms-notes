@@ -35,6 +35,9 @@ There is hope that quantum computing will give us the non-deterministic computer
 
 ### The Class of Problems
 We think of problems as belonging to a class. 
+
+![NP](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/P_np_np-complete_np-hard.svg/600px-P_np_np-complete_np-hard.svg.png)
+
 * **Class P**: A solution may be found in polynomial time (easy)
 * **Class NP**: A solution may be verified in polynomial time
 * **NP Hard**: We are yet to find a polynomial-time solution
