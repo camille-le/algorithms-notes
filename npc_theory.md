@@ -111,4 +111,6 @@ If you can recognize certain time complexities, you will know to use different t
   * Boolean Formulas & CNF
 * The NP Complete problems from the lectures are your primary source for the **known** problem
 
+When looking for a **known** problem, stay in the domain. 
+
 
