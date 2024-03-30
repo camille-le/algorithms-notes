@@ -66,3 +66,13 @@ In this case, we're using a reduction to prove the _hardness_ of a problem. We r
 We have some known problem `A`. We're taking problems that we assume are hard, such as SAT, Vertex Cover, Independent Set, and the like, and we reduce it to some unknown problem `B`. 
 
 The argument is that if `A` is known to be hard, it does not have a polynomial time solution, then solving B can be used to solve `A`. 
+
+### NP Reductions - The Steps
+We have a problem B and we want to show that it is NP Complete.
+* A) Demonstrate that problem B is in the class of NP problems. 
+    *   _This is done by validating a solution to problem B in polynomial time._
+* B) Demonstrate that problem B is at least as hard a problem known to be NP Complete. This is done via reduction from a known problem A `A -> B`
+  * Show an instance of A is converted to B in polynomial time
+  * Show a solution of B can be converted to a solution for A in polynomial time
+* C) Show that solution for B exists IFF a solution to A exists
+
