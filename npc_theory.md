@@ -96,5 +96,5 @@ Because a **goal** can be validated in polynomial time. They are in the class NP
 
 The **optimization** problems can take exponential time. Finding the largest `Independent Set` would take exponential time. To find the correct answer is exponential; they are `NP Hard` but they are not in the class `NP`. 
 
-
+The point of this is that an easy problem is a polynomial one. The unknown problem is at least as hard as the known problem. 
 
