@@ -104,6 +104,11 @@ If you can recognize certain time complexities, you will know to use different t
 * Heuristics
 * Approximation
 
-
+### How do I get good at this? 
+* Practice Reductions
+* Know the problems used in the reductions
+  * Lots of Graph Theory 
+  * Boolean Formulas & CNF
+* The NP Complete problems from the lectures are your primary source for the **known** problem
 
 
