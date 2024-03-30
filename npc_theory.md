@@ -75,4 +75,26 @@ We have a problem B and we want to show that it is NP Complete.
   * Show an instance of A is converted to B in polynomial time
   * Show a solution of B can be converted to a solution for A in polynomial time
 * C) Show that solution for B exists IFF a solution to A exists
+  * If a solution exists for B, a solution must exist for A.
+    * If B then A; if A then B
+  * If no solution exists for B, no solution can possibly exist for A
+    * If B then A; if not B, then not A
+
+### Goal vs. Optimization Problems 
+With our NP proofs, we generally work with **goal** versions of problems.
+* Find an `Independent Set` of at least `k` vertices
+* Find a `Vertex Cover` of at most `k` vertices
+* Find a subset of items of weight `<= B` and total value `>= g`
+
+Rather than **optimization** versions
+* Find the largest `Independent Set`
+* Find the smallest `Vertex Cover`
+* Find the subset of objects with weight `<= B` which maximizes the total value
+
+#### Why? 
+Because a **goal** can be validated in polynomial time. They are in the class NP.  
+
+The **optimization** problems can take exponential time. Finding the largest `Independent Set` would take exponential time. To find the correct answer is exponential; they are `NP Hard` but they are not in the class `NP`. 
+
+
 
