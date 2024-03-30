@@ -98,3 +98,12 @@ The **optimization** problems can take exponential time. Finding the largest `In
 
 The point of this is that an easy problem is a polynomial one. The unknown problem is at least as hard as the known problem. 
 
+### Why do we care?
+If you can recognize certain time complexities, you will know to use different techniques to solve problems: 
+* Brute Force
+* Heuristics
+* Approximation
+
+
+
+
