@@ -65,9 +65,57 @@ The graph on the right is an **infeasible region**. There is no intersection of 
 
 ### Bounded vs. Unbounded
 ![bound_unbound.png](imgs/bound_unbound.png)
+Is this linear program **bounded** or **unbounded**? The answer is, it depends! It depends on the **objective function.**
+```
+max  x + y
+max -x - y
+```
+If we want to maximize `x + y`, then the linear program is **unbounded**. Why? We can constantly increase `x + y` so there's no single maximum. 
 
+However, maximizing `-x - y` is bounded. We want `x` and `y` to be as small as possible and will eventually run into a boundary of the feasible region which makes this a **bounded** linear program.
+
+**Feasibility** has to deal with the constraints; is there a way to satisfy all the constraints? 
+
+If a linear program is feasible, we can then discuss if a linear program is **bounded**. Whether it's bounded, it has to be a **feasible** program and one such that the objective function will lead to a single optimal solution.
+
+### What is Standard Form for Linear Programs?
+| The Lecture                          | The Book                                        |
+|--------------------------------------|-------------------------------------------------|
+| The variables are non-negative       | The variables are non-negative                  |
+| Objective function is maximized      | Objective function is minimized                 |
+| The constraints are described as     | The constraints are described as                |
+| upper bounds (≤)                     | equality (=) through the use of slack variables |
+
+There is no general consensus on what is "standard form". We use the format from the lecture, which is much easier to work with. 
+
+### LP Format Guidelines
+- All variables are subject to non-negativity constraints
+- For the other constraints:
+  - Equation on the left, constant on the right
+  - With a `max` objective function, the constraints are upper bounds `≤`
+  - With a `min` objective function, the constraints are lower bounds `≥`
+  - Break equality (`=`) into two constraints  
+    - For example, `x = 200` becomes `x ≥ 200` and `x ≤ 200`
+
+These two are equivalent:
+```
+max  2x + 3y
+min -2x - 3y
+```
+These two are also equivalent: 
+```
+x + 3y - 2 <= 4
+-x -3y + 2 >= -4
+```
 
 ### Converting between Primal and Dual
+We have to convert between the two. The first thing we know, is that if the primal is a maximization, the dual minimizes. 
 
+![primal_dual.png](imgs/primal_dual.png)
 
+If the primal has 3 constraints, the dual has 3 variables. When I describe my minimization function of my dual, I use the new variables that I've assigned. 
+
+The constants for your constraints become the coefficients for your dual.
+
+For every variable in the primal, you will have constraint in the dual. 
 ### Duality Theorem
