@@ -118,4 +118,28 @@ If the primal has 3 constraints, the dual has 3 variables. When I describe my mi
 The constants for your constraints become the coefficients for your dual.
 
 For every variable in the primal, you will have constraint in the dual. 
+
 ### Duality Theorem
+If the primal is unbounded, then the dual must be infeasible. Conversely, an unbounded dual indicates a primal that is infeasible.
+
+This relationship helps us understand feasibility:
+
+| Primal                 |      | Dual                    |
+|------------------------|------|-------------------------|
+| Unbounded              | →    | Infeasible              |
+| Infeasible             | ←    | Unbounded               |
+| Infeasible             | →    | Unbounded OR Infeasible |
+| Unbounded OR Infeasible| ←    | Infeasible              |
+
+The purpose of working with primal-dual pairs lies in the ease of determining feasibility. An infeasible primal does not provide clear information about its dual—it could be either unbounded or infeasible. However, unboundedness in one domain ensures infeasibility in the other.
+
+**Key point: Unboundedness confirms infeasibility.**
+Infeasibility does not imply unboundedness.
+
+*Primal – max* / *Dual – min*
+
+* **Weak Duality:** Any feasible value of the dual LP is an upper bound on the original primal LP
+* **Strong Duality:** A primal LP has an optimum value IFF the dual LP has an optimal value and the two optimum values coincide
+
+The maximization of the primal equals the minimization of the dual. We certify a candidate for the primal by finding a dual that comes to the same objective function.
+
