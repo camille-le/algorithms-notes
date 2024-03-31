@@ -1,8 +1,8 @@
 ## 03/20 Office Hour Notes 
 Notes taken from 03/21 office hours. 
-You need to understand the concepts and how these things work. We are looking to test your fundamental understanding of the material. Go through the practice problems in HW7, the recommended practice problems. Working through these things manually will reinforce the concepts.
+You need to understand the concepts and how these things work. We are looking to test your fundamental understanding of the material. Go through the practice problems in HW7, the recommended practice problems.
 
-Hints:
+_Hints:_
 - You should understand the strategy behind simplex. 
 - We are not asking you to solve simplex in the context of the exam
 - Understand it to the extent the lectures go over it
