@@ -36,6 +36,24 @@ A linear program that is **infeasible** does not have any solution.
 
 The optimal value will be a point on the boundary region of the polyhedron which is formed by the intersection of all of the constraints.
 
+There could be more than one combination of values for the variables which gives you the **optimal value**. There could be more than one point in the **feasible region**. In point that is optimal will be on the boundary of the polyhedron.
+
+If an optimum exists for a LP, the set of possible points that gets you there, will include a point that is a vertex on this bounded region (which is how simplex works). Simplex works by walking the vertices of this feasible region and looking for the vertex that maximizes the objective function. 
+
+The optimal value for an objective function will be a unique value. There may be more than one point which provides the optimal value. 
+
+#### Matrix Vector Form
+We also have the **Matrix Vector** form of a linear program. 
+
+
+$$
+\begin{aligned}
+\text{maximize} \quad & \mathbf{c}^T \mathbf{x} \\
+\text{subject to} \quad & A\mathbf{x} \leq \mathbf{b} \\
+& \mathbf{x} \geq 0
+\end{aligned}
+$$
+
 ### Finding Optimal Value of a Linear Program
 
 
