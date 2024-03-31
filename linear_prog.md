@@ -7,7 +7,8 @@ Hints:
 - We are not asking you to solve simplex in the context of the exam
 - Understand it to the extent the lectures go over it
 
-### Format of a Linear Program
+### Finding Optimal Value of a Linear Program
+#### General Form
 Every linear program begins with a **objective function** which is either a **maximization** or a **minimization**.
 
 Here we are maximizing `2x + 3y`. In addition, our objective function is subject to a series of constraints. 
@@ -43,24 +44,27 @@ If an optimum exists for a LP, the set of possible points that gets you there, w
 The optimal value for an objective function will be a unique value. There may be more than one point which provides the optimal value. 
 
 #### Matrix Vector Form
-We also have the **Matrix Vector** form of a linear program. 
-
-
-$$
-\begin{aligned}
-\text{maximize} \quad & \mathbf{c}^T \mathbf{x} \\
-\text{subject to} \quad & A\mathbf{x} \leq \mathbf{b} \\
-& \mathbf{x} \geq 0
-\end{aligned}
-$$
-
-### Finding Optimal Value of a Linear Program
-
+We also have the **Matrix Vector** form of a linear program.
+```
+Matrix-Vector: max c^T x
+               Ax <= b
+               x >= 0
+```
+* `x` is the set of variables
+* `c` is the set of coefficients 
+* `A(x) <= b`: b is the set of values to the right; A is the set of coefficients in the set of constraints
+* `x` is our vector of variables
 
 ### Feasible vs. Infeasible 
+![feas_infeas.png](imgs/feas_infeas.png)
+The graph on the left represents a **feasible** linear program. Why? It's because there is an intersection of all of these half-planes that defines a **feasible** region for us. It is non-empty. Some value in here, any value in here, makes our LP feasible. 
 
+What is a feasible linear program? It's one for which there is a set of values that satisfies all the constraints.
+
+The graph on the right is an **infeasible region**. There is no intersection of all the half planes that defines a set of valid values for `x` and `y` to satisfy all the constraints.
 
 ### Bounded vs. Unbounded
+![bound_unbound.png](imgs/bound_unbound.png)
 
 
 ### Converting between Primal and Dual
